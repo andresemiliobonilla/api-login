@@ -11,7 +11,7 @@ const verificarToken = (req, res, next) => {
     {
       return res.status(401).send({respuesta: "error en el token"})
     }
-    req.userId = decoded.indexOf;
+    req.userId = decoded.id;
     next();
   })
 }
